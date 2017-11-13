@@ -1,11 +1,31 @@
 <html>
+	
 	<header>
 		Clickable
+		<br>
+				<nav>
+			<a href="aboutme.html" />
+				About Me
+			</a>
+			<a href="index.html" />
+					Home
+			</a>
+			<a href="projects.html" />
+				pictures!
+			</a>
+		</nav>
 	</header>
+	<script>
+		function clickMe() {
+			document.getElementById("circle").innerHTML = "Wats up boi";
+		}
+	</script>
 	
 	<section>
-		<img style="width:200px;" src="https://www.wired.com/images_blogs/design/2013/09/tumblr_inline_mjx5ioXh8l1qz4rgp.gif">
+	<div id="circle"style="height:120px;width:120px;background-color:skyblue;border-radius:50px;position:relative;top:100px;font-size:25px;"></div>
+		<img style="width:500px;" src="https://www.wired.com/images_blogs/design/2013/09/tumblr_inline_mjx5ioXh8l1qz4rgp.gif"></div>
 		Name: <input type="text" />
-		<input type="button" value="click me!"/>
+		<input type="button" value="click me!" onclick="clickMe();"/>
+	
 	</section>
 </html>
